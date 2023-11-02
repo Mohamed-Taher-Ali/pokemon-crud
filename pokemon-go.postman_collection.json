@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "dea5efd1-112c-4c2f-a1d1-89c11837fce9",
+		"name": "pokemon-go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13237924"
+	},
+	"item": [
+		{
+			"name": "pokemon-populates",
+			"item": [
+				{
+					"name": "weathers",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"weather1rt3453e\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/weathers/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"weathers",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"weather22123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/weathers/65416da0c9b309f4aaa8b860",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"weathers",
+										"65416da0c9b309f4aaa8b860"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/weathers/65416da0c9b309f4aaa8b860",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"weathers",
+										"65416da0c9b309f4aaa8b860"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/weathers?page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"weathers"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "evolutionStages",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"ev1\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/evolutionStages/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"evolutionStages",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"ev 2323\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/evolutionStages/65416d4dc9b309f4aaa8b859",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"evolutionStages",
+										"65416d4dc9b309f4aaa8b859"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/evolutionStages/65416d4dc9b309f4aaa8b859",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"evolutionStages",
+										"65416d4dc9b309f4aaa8b859"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/evolutionStages?page=2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"evolutionStages"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "types",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type11\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/types/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"types",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type5645\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/types/65410b25f7b1c43475ac872a",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"types",
+										"65410b25f7b1c43475ac872a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/types/65410b25f7b1c43475ac872a",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"types",
+										"65410b25f7b1c43475ac872a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"type10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pokemon-populates/types?page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pokemon-populates",
+										"types"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pokemons",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"poke 1\",\n  \"pokedexNumber\": 2,\n  \"imgName\": \"image 2\",\n  \"generation\": 454,\n  \"evolutionStage\": \"65416d4dc9b309f4aaa8b859\",\n  \"evolved\": 0,\n  \"familyId\": 35,\n  \"crossGen\": 0,\n  \"type1\": \"65410b25f7b1c43475ac872a\",\n  \"type2\": \"65410b25f7b1c43475ac872a\",\n  \"weather1\": \"65416da0c9b309f4aaa8b860\",\n  \"weather2\": \"65416da0c9b309f4aaa8b860\",\n  \"atk\": 10,\n  \"def\": 20,\n  \"sta\": 30,\n  \"legendary\": 1,\n  \"aquirable\": 0,\n  \"spawns\": 0,\n  \"regional\": 1,\n  \"raidable\": 1,\n  \"hatchable\": 45,\n  \"shiny\": 1,\n  \"nest\": 1,\n  \"new\": 1,\n  \"notGettable\": 1,\n  \"futureEvolve\": 1,\n  \"cp40\": 43534,\n  \"cp39\": 65753\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pokemons/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pokemons",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"name 49239\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pokemons/65417d0112539165c48da0d4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pokemons",
+								"65417d0112539165c48da0d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"type10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pokemon-populates/types/65410b25f7b1c43475ac872a",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pokemon-populates",
+								"types",
+								"65410b25f7b1c43475ac872a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"type10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pokemons/65417d0112539165c48da0d4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pokemons",
+								"65417d0112539165c48da0d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"type10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/pokemon-populates/types?page=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pokemon-populates",
+								"types"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "uploads",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/moslem/Downloads/Pokemon Go.xlsx"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/uploads/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"uploads",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
