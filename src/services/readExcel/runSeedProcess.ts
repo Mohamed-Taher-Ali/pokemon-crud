@@ -10,7 +10,11 @@ const fileName = process.argv.slice(2)[0];
 const fileFullName = path.join(p, fileName);
 
 runDB(() => {
-  seedPokemonsAdapter(fileFullName, executeSeed, seedPokemonModel, () => {
-    process.exit(0);
-  });
+  try {
+    seedPokemonsAdapter(fileFullName, executeSeed, seedPokemonModel, () => {
+      process.exit(0);
+    });
+  } catch (error) {
+    throw Error(error);
+  }
 });

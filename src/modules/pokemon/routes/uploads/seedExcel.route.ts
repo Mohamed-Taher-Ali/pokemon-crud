@@ -13,7 +13,7 @@ const routeHandler = async (req: Request, res: Response) => {
   const uploadPath = process.env.UPLOAD_PATH;
   const fileFullName = `${uploadPath}/${filename}`;
 
-  res.end(seedPokemonsAdapter(fileFullName, executeSeed, seedPokemonModel));
+  res.send(seedPokemonsAdapter(fileFullName, executeSeed, seedPokemonModel));
 };
 
 export const seedExcelRoute = new SingleRoute(
