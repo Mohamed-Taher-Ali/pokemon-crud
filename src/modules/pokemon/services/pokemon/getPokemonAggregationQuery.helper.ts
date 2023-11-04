@@ -7,7 +7,10 @@ const manipulateSearchQuery = (filter = {}, populatedFields, operator) => {
     [`$${operator}`]: Object.entries(filter).reduce((fields, [key, val]) => {
       const isPopulatedField = populatedFields.includes(key);
       const updatedKey = isPopulatedField ? `${key}.name` : key;
-      return [...fields, { [updatedKey]: isNaN(+val) ? val : +val }];
+      return [
+        ...fields,
+        { [updatedKey]: isNaN(+val) ? { $regex: val, $options: "i" } : +val },
+      ];
     }, []),
   };
 
