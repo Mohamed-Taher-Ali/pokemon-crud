@@ -2,9 +2,8 @@
 
 
 after clone the project, just run these 2 commands:
-    docker compose up
-    docker compose up -d
-
+    1- sudo docker-compose build
+    2- sudo docker-compose up -d
 
 
 project structure:
@@ -65,20 +64,18 @@ there are 2 ways for seeding
     1- by uploading through api >>> /api/uploads/ > the file name is > file
     2- by putting the excel file in uploads directory then run command > yarn seedExcel $the_file_name_you_put
         1- move an excel file manually in app/src/uploads (there is a one by default i put it)
-        2- run > docker exec -it <container id> bash
-        2- run > yarn seedExcel <excel file name>
+        2- run > sudo docker exec -it <container id> bash
+        2- run > npm run seedExcel <excel file name>
         ... congratulations you seeded the db with pokemons & their dependencies.
 
 adding customized fields in request object to serve multiple aims like filter | pagination
 
 **scenario > to add a new pokemon
     1- add evolutionStage > api
-    2- add evolutionStage > api
-    3- add evolutionStage > api
-    4- add evolutionStage > api
-    5- add evolutionStage > api
+    2- add type1, type2 by types > api
+    2- add weather1, weather2 by weathers > api
 
-    6- by ids of these docs you append these ids in the body of adding pokemon.
+    4- by ids of these docs you append these ids in the body of adding pokemon.
 
 
 

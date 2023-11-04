@@ -4,8 +4,8 @@
   "description": "typescript nodejs for CRUD with seeding from excel file using node | express | mongodb | mongoose | joi",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "tsc & node .",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
     "dev": "tsc -w & nodemon .",
     "seedExcel": "ts-node ./src/services/readExcel/runSeedProcess.ts"
   },

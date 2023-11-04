@@ -1,7 +1,9 @@
-FROM node:20.9.0
+FROM node:18.0.0
 
-WORKDIR /pokemon
+WORKDIR /home/node/app
 COPY package.json .
-RUN yarn
+RUN npm i
 COPY . .
-CMD yarn start
+RUN npm run build
+
+CMD npm start
