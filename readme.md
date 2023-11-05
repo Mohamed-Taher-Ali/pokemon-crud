@@ -62,7 +62,7 @@ localhost:8000
 
 there are 2 ways for seeding
     1- by uploading through api >>> /api/uploads/ > the file name is > file
-    2- by putting the excel file in uploads directory then run command > yarn seedExcel $the_file_name_you_put
+    2- by putting the excel file in uploads directory then run command
         1- move an excel file manually in app/src/uploads (there is a one by default i put it)
         2- run > sudo docker exec -it <container id> bash
         2- run > npm run seedExcel <excel file name>
